@@ -1,6 +1,8 @@
 How to add Extra classes is in the Vafpress Docs
 
-here is how I added
+The Folders provided go in a folder called `vp_custom_fields` - can be called anything so long as it's changed in the snippet. Folder can go anywhere, just point to it in the snippet where I have a constant of THEME_FRAMEWORK_DIR.
+
+here is how I added:
 
 
 	// Directories for Custom Fields Register
@@ -8,7 +10,9 @@ here is how I added
 	$vpfs->add_directories( 'views', THEME_FRAMEWORK_DIR . '/vp_custom_fields/views');
 	VP_AutoLoader::add_directories(THEME_FRAMEWORK_DIR . '/vp_custom_fields/classes', 'VP_');
 
-# Adding a taxonomy
+## Adding a taxonomy
+
+Gives checkboxes of taxonomy categories associated with the custom post types
 
      array(
         'type' => 'taxonomy',
@@ -18,7 +22,9 @@ here is how I added
         ),
         
         
-# Media field returns the id rather then the url
+## Media field
+
+Returns the id rather then the url
 
     array(
 				'type' => 'media',
