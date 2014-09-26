@@ -2,10 +2,11 @@ How to add Extra classes is in the Vafpress Docs
 
 here is how I added
 
-# Directories for Custom Fields Register
-$vpfs = VP_FileSystem::instance();
-$vpfs->add_directories( 'views', THEME_FRAMEWORK_DIR . '/vp_custom_fields/views');
-VP_AutoLoader::add_directories(THEME_FRAMEWORK_DIR . '/vp_custom_fields/classes', 'VP_');
+
+	// Directories for Custom Fields Register
+	$vpfs = VP_FileSystem::instance();
+	$vpfs->add_directories( 'views', THEME_FRAMEWORK_DIR . '/vp_custom_fields/views');
+	VP_AutoLoader::add_directories(THEME_FRAMEWORK_DIR . '/vp_custom_fields/classes', 'VP_');
 
 # Adding a taxonomy
 
